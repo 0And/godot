@@ -564,7 +564,7 @@ namespace Godot
             }
 #endif
             real_t theta = AngleTo(to);
-            return Rotated(Cross(to), theta * weight);
+            return Rotated(Cross(to).Normalized(), theta * weight);
         }
 
         /// <summary>
